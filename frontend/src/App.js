@@ -13,7 +13,7 @@ function App() {
   const handleGetData = async () => {
     try {
       const family = await axios.get(
-        "http://localhost:4000/api/v1/family/members"
+        "https://family-app-l7m7.onrender.com/api/v1/family/members"
       );
       const data = await family.data;
       setMember(data);
@@ -24,10 +24,11 @@ function App() {
 
   const handleDeleteMember = async (id) => {
     axios
-      .delete(`http://localhost:4000/api/v1/family/members/${id}`)
-      .then((res) => {
+      .delete(
+        `https://family-app-l7m7.onrender.com/api/v1/family/members/${id}`
+      )
+      .then(() => {
         const newData = member.filter((data) => data._id !== id);
-        console.log(res.data);
         setMember(newData);
       })
       .catch((error) => console.log(error));
