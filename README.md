@@ -55,4 +55,18 @@ Copyright © [2023] [Ayban]
 
 All rights reserved. This project and its accompanying files are protected by copyright law. Unauthorized reproduction or distribution of this project, or any portion of it, may result in severe civil and criminal penalties, and will be prosecuted to the maximum extent possible under the law.
 
+## Note on Service Reliability
+
+Please note that the backend of this project is hosted on the Render.com platform, which provides a reliable hosting infrastructure for web applications. However, as with any service, occasional disruptions or performance issues may occur.
+
+Render.com strives to maintain a high level of uptime and availability, but it's important to acknowledge that unforeseen circumstances or maintenance activities may impact the availability of the API endpoints. 
+
+In the event of any temporary disruptions, the API responses may experience delays or intermittent errors. If you encounter any issues while using the application, I kindly request your patience and understanding.
+
+I actively monitor the service and work diligently to address any potential issues promptly. Should you encounter persistent problems, please don't hesitate to reach out to me, and I will do my best to resolve the situation as quickly as possible.
+
+Thank you for your understanding and support.
+
+
+
 
