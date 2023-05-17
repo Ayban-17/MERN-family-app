@@ -28,7 +28,7 @@ The frontend of this application is developed using React, a popular JavaScript 
 
 To set up and run the frontend, please follow these steps:
 
-1. Navigate to the `frontend` directory using the command `cd front`.
+1. Navigate to the `frontend` directory using the command `cd frontend`.
 2. Install the necessary dependencies using `npm install`.
 3. Launch the development server by executing `npm start`.
 
