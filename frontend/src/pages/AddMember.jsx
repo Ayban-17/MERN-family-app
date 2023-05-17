@@ -39,7 +39,10 @@ const AddMember = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post("http://localhost:4000/api/v1/family/members", formData)
+      .post(
+        "https://family-app-l7m7.onrender.com/api/v1/family/members",
+        formData
+      )
       .then(() => (window.location = "/"))
       .catch((err) => console.log(err));
   };

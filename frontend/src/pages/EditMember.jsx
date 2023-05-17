@@ -31,7 +31,7 @@ const EditMember = () => {
   const getMemberToEdit = async (id) => {
     try {
       const member = await axios.get(
-        `http://localhost:4000/api/v1/family/members/${id}`
+        `https://family-app-l7m7.onrender.com/api/v1/family/members/${id}`
       );
       const data = await member.data;
       setMemberData(data);
@@ -42,7 +42,10 @@ const EditMember = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .patch(`http://localhost:4000/api/v1/family/members/${id}`, formData)
+      .patch(
+        `https://family-app-l7m7.onrender.com/api/v1/family/members/${id}`,
+        formData
+      )
       .then(() => (window.location = "/"))
       .catch((err) => console.log("The error is " + err));
   };

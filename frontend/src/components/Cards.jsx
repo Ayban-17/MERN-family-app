@@ -18,7 +18,7 @@ const Cards = ({ member, handleDeleteMember, setOneMember, oneMember }) => {
 
   const handleOpenDetails = (id) => {
     axios
-      .get(`http://localhost:4000/api/v1/family/members/${id}`)
+      .get(`https://family-app-l7m7.onrender.com/api/v1/family/members/${id}`)
       .then(() => {
         const findMember = member.find((data) => data._id === id);
         setOneMember(findMember);
