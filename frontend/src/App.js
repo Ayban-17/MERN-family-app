@@ -1,10 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { QueryClient, QueryClientProvider } from "react-query";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import AddMember from "./pages/AddMember";
 import EditMember from "./pages/EditMember";
 import { useEffect, useState } from "react";
 import axios from "axios";
+
+const queryClient = new QueryClient();
 
 function App() {
   const [member, setMember] = useState([]);
@@ -39,26 +42,28 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <Home
-                member={member}
-                handleDeleteMember={handleDeleteMember}
-                oneMember={oneMember}
-                setOneMember={setOneMember}
-              />
-            }
-          />
-          <Route path="/add" element={<AddMember />} />
-          <Route path="/edit/:id" element={<EditMember />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <div className="App">
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Home
+                  member={member}
+                  handleDeleteMember={handleDeleteMember}
+                  oneMember={oneMember}
+                  setOneMember={setOneMember}
+                />
+              }
+            />
+            <Route path="/add" element={<AddMember />} />
+            <Route path="/edit/:id" element={<EditMember />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </QueryClientProvider>
   );
 }
 
