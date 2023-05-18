@@ -28,23 +28,6 @@ const Home = ({ member, handleDeleteMember, setOneMember, oneMember }) => {
         }}
         className="loader-container"
       >
-        <LoadingButton
-          sx={{
-            width: "80%",
-            height: "80%",
-            background: "rgba( 14, 8, 57, 0.65 )",
-            boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
-            backdropFilter: "blur( 4px )",
-            WebkitBackdropFilter: " blur( 4px )",
-            borderRadius: "10px",
-            border: "1px solid rgba( 255, 255, 255, 0.18 )",
-          }}
-          loading
-          variant="outlined"
-          disabled
-        >
-          Loading...
-        </LoadingButton>
         <Bars type="BallTriangle" color="#00BFFF" height={100} width={80} />
       </Box>
     );
