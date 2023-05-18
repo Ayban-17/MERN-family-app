@@ -44,7 +44,7 @@ For a detailed overview of the frontend implementation, please refer to the `cli
 
 To get started with my MERN application, please follow these steps:
 
-1. Clone this repository to your local machine using the command `git clone https://github.com/your-username/your-repository.git`.
+1. Clone this repository to your local machine using the command `git clone https://github.com/Ayban-17/MERN-family-app.git`
 2. Configure the backend as described above, ensuring that the MongoDB connection is properly set up.
 3. Set up and launch the frontend as described above.
 4. Access the application by opening your web browser and navigating to `http://localhost:3000`.
